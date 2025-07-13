@@ -1,0 +1,41 @@
+[debug] [2025-07-13T06:34:19.988Z] ----------------------------------------------------------------------
+[debug] [2025-07-13T06:34:19.991Z] Command:       /nix/store/rbdrkcs5kkwpalxcd7c6bnm33lk2955n-nodejs-20.19.0/bin/node /nix/store/fprgfkwna33crhc86jqbf5878piivvgw-firebase-tools-14.7.0/lib/node_modules/firebase-tools/lib/bin/firebase.js init hosting
+[debug] [2025-07-13T06:34:19.991Z] CLI Version:   14.7.0
+[debug] [2025-07-13T06:34:19.992Z] Platform:      linux
+[debug] [2025-07-13T06:34:19.992Z] Node Version:  v20.19.0
+[debug] [2025-07-13T06:34:19.992Z] Time:          Sun Jul 13 2025 06:34:19 GMT+0000 (Coordinated Universal Time)
+[debug] [2025-07-13T06:34:19.992Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-07-13T06:34:19.998Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-07-13T06:34:19.999Z] > authorizing via signed-in user (sjroyalevents@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/user/srj-events
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2025-07-13T06:34:31.394Z] Checked if tokens are valid: true, expires at: 1752391678920
+[debug] [2025-07-13T06:34:31.395Z] Checked if tokens are valid: true, expires at: 1752391678920
+[debug] [2025-07-13T06:34:31.397Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2025-07-13T06:34:31.397Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"sj-royal-events","name":"sj-royal-events"}
+[debug] [2025-07-13T06:34:32.261Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 409
+[debug] [2025-07-13T06:34:32.261Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":409,"message":"Requested entity already exists","status":"ALREADY_EXISTS"}}
+[debug] [2025-07-13T06:34:32.297Z] FirebaseError: Request to https://cloudresourcemanager.googleapis.com/v1/projects had HTTP Error: 409, Requested entity already exists
+    at responseToError (/nix/store/fprgfkwna33crhc86jqbf5878piivvgw-firebase-tools-14.7.0/lib/node_modules/firebase-tools/lib/responseToError.js:52:12)
+    at RetryOperation._fn (/nix/store/fprgfkwna33crhc86jqbf5878piivvgw-firebase-tools-14.7.0/lib/node_modules/firebase-tools/lib/apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to create project because there is already a project with ID sj-royal-events. Please try again with a unique project ID.
