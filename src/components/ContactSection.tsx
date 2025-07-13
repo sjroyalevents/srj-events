@@ -29,7 +29,7 @@ const ContactSection: React.FC = () => {
   };
 
   return (
-    <section id="contact" className="py-12" style={{ background: 'var(--neutral)' }}>
+    <section id="contact" className="py-12" style={{ background: 'var(--section-neutral)' }}>
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-8" style={{ color: 'var(--secondary)' }}>Get in Touch</h2>
         <div className="flex flex-wrap -mx-4">

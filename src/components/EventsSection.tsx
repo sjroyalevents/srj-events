@@ -24,7 +24,7 @@ const EventsSection: React.FC = () => {
   ];
 
   return (
-    <section id="events" className="py-12" style={{ background: 'var(--neutral)' }}>
+    <section id="events" className="py-12" style={{ background: 'var(--section-purple)' }}>
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-8" style={{ color: 'var(--secondary)' }}>Upcoming Events</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

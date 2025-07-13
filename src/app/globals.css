@@ -7,6 +7,10 @@
   --secondary: #5D2586; /* Fun Purple */
   --accent: #E1C94B; /* Goldenrod Yellow */
   --neutral: #ededed;
+  --section-yellow: #FFF9E5;
+  --section-purple: #F5F0FF;
+  --section-orange: #FFF3E5;
+  --section-neutral: #F8F8F8;
 }
 
 @theme inline {
