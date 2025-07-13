@@ -29,30 +29,29 @@ const ContactSection: React.FC = () => {
   };
 
   return (
-    <section id="contact" className="py-12 bg-gray-100">
+    <section id="contact" className="py-12" style={{ background: 'var(--neutral)' }}>
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-8">Get in Touch</h2>
+        <h2 className="text-3xl font-bold text-center mb-8" style={{ color: 'var(--secondary)' }}>Get in Touch</h2>
         <div className="flex flex-wrap -mx-4">
           <div className="w-full md:w-1/2 px-4 mb-8 md:mb-0">
-            <h3 className="text-xl font-semibold mb-4">Contact Information</h3>
+            <h3 className="text-xl font-semibold mb-4" style={{ color: 'var(--accent)' }}>Contact Information</h3>
             <p className="mb-2"><strong>Phone:</strong> +91 70527 28186</p>
-            <p className="mb-2">
- <strong>Email:
- </strong> sjroyalevents@gmail.com</p>
+            <p className="mb-2"><strong>Email:</strong> sjroyalevents@gmail.com</p>
             <p className="mb-2"><strong>Address:</strong> Nawabganj, Durgakund, Jawahar Nagar Colony, Bhelupur, Varanasi, Uttar Pradesh 221010</p>
             <div className="mt-4">
- <a
- href="https://maps.app.goo.gl/5fQvEoxRA7JrEHcL9"
- target="_blank"
- rel="noopener noreferrer"
- className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
- >
+              <a
+                href="https://maps.app.goo.gl/5fQvEoxRA7JrEHcL9"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block font-bold py-2 px-4 rounded"
+                style={{ background: 'var(--primary)', color: 'white' }}
+              >
                 Get Directions
- </a>
- </div>
+              </a>
+            </div>
           </div>
           <div className="w-full md:w-1/2 px-4">
-            <h3 className="text-xl font-semibold mb-4">Express Your Interest</h3>
+            <h3 className="text-xl font-semibold mb-4" style={{ color: 'var(--accent)' }}>Express Your Interest</h3>
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700">Name</label>
@@ -105,7 +104,8 @@ const ContactSection: React.FC = () => {
               <div>
                 <button
                   type="submit"
-                  className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                  className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md"
+                  style={{ background: 'var(--primary)', color: 'white' }}
                 >
                   Submit
                 </button>

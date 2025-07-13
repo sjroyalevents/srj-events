@@ -21,14 +21,14 @@ const ReviewsSection: React.FC = () => {
   ];
 
   return (
-    <section id="reviews" className="py-12 bg-gray-100">
+    <section id="reviews" className="py-12" style={{ background: 'var(--neutral)' }}>
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-8">What Our Customers Say</h2>
+        <h2 className="text-3xl font-bold text-center mb-8" style={{ color: 'var(--secondary)' }}>What Our Customers Say</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {reviews.map((review) => (
-            <div key={review.id} className="bg-white p-6 rounded-lg shadow-md">
-              <p className="text-gray-700 mb-4">{`"${review.feedback}"`}</p>
-              <p className="text-right font-semibold text-gray-900">- {review.name}</p>
+            <div key={review.id} className="bg-white p-6 rounded-lg shadow-md border-l-4" style={{ borderColor: 'var(--primary)' }}>
+              <p className="mb-4">{`"${review.feedback}"`}</p>
+              <p className="text-right font-semibold" style={{ color: 'var(--accent)' }}>- {review.name}</p>
             </div>
           ))}
         </div>

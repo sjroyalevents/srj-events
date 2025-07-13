@@ -27,6 +27,23 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <nav
+          className="w-full py-4 border-b border-gray-200 mb-8 text-center"
+          style={{
+            background: 'var(--primary)',
+            boxShadow: '0 2px 8px 0 rgba(0,0,0,0.04)'
+          }}
+        >
+          <h1
+            className="m-0 text-3xl font-bold tracking-wide"
+            style={{
+              color: 'var(--secondary)',
+              fontFamily: 'var(--font-geist-sans), Arial, sans-serif'
+            }}
+          >
+            SJ Royal Events
+          </h1>
+        </nav>
         {children}
       </body>
     </html>

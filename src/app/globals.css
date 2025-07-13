@@ -3,6 +3,10 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary: #F98128; /* Tangerine Orange */
+  --secondary: #5D2586; /* Fun Purple */
+  --accent: #E1C94B; /* Goldenrod Yellow */
+  --neutral: #ededed;
 }
 
 @theme inline {
@@ -16,11 +20,19 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --primary: #F98128;
+    --secondary: #A084CA; /* Lighter purple for dark mode */
+    --accent: #FFD966; /* Lighter yellow for dark mode */
+    --neutral: #232323;
   }
 }
 
+html, body {
+  min-height: 100vh;
+}
+
 body {
-  background: var(--background);
+  background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
